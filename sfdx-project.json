@@ -1,0 +1,54 @@
+{
+  "packageDirectories": [
+    {
+      "path": "force-app",
+      "package": "Base DC Package",
+      "versionName": "ver 0.1",
+      "versionNumber": "0.1.0.NEXT",
+      "default": true,
+      "versionDescription": ""
+    },
+    {
+      "path": "dc-app",
+      "package": "DC Extension Package",
+      "versionName": "ver 0.1",
+      "versionNumber": "0.1.0.NEXT",
+      "default": false,
+      "versionDescription": "",
+      "dependencies": [
+        {
+          "package": "04t5Y000001MkFa"
+        },
+        {
+          "package": "Base DC Package",
+          "versionNumber": "0.1.0.LATEST"
+        }
+      ]
+    },
+    {
+      "path": "core-app",
+      "package": "Core Extension Package",
+      "versionName": "ver 0.1",
+      "versionNumber": "0.1.0.NEXT",
+      "default": false,
+      "versionDescription": "",
+      "dependencies": [
+        {
+          "package": "DC Extension Package",
+          "versionNumber": "0.1.0.LATEST"
+        }
+      ]
+    }
+  ],
+  "name": "2GPTest1",
+  "namespace": "jhddc",
+  "sfdcLoginUrl": "https://login.salesforce.com",
+  "sourceApiVersion": "60.0",
+  "packageAliases": {
+    "Base DC Package": "0Ho8b00000000GFCAY",
+    "DC Extension Package": "0Ho8b00000000GKCAY",
+    "Core Extension Package": "0Ho8b00000000GPCAY",
+    "Base DC Package@0.1.0-1": "04t8b000001BVBGAA4",
+    "DC Extension Package@0.1.0-1": "04t8b000001BVBLAA4"
+  }
+}
